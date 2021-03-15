@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+
+*{
+	scroll-behavior: smooth;
+}
+body{
+	background: #232532;
+	max-width: 1440px;
+	margin: 0px auto;
+	padding: 0px 15px;
+	
+}
+
+.header{
+	display: flex;
+  	//align-items: flex-start;
+  	justify-content: space-between;
+
+  
+}
+.header .logo p{
+	display: inline-flex;
+	font-family: 'Kaushan Script', cursive; 
+	//position: relative;
+	//left: 20px;
+	//bottom: : 10px;
+	//align-items: flex-start;
+	//justify-content: flex-start;
+	user-select: none;
+	font-size: 25px;
+	color: #FFFFFF
+}
+
+.header .logo img{
+	padding: 20px 0px 0px 10px;
+}
+
+.nav_links {
+	display: inline-flex;
+	font-family: Red Hat Text; 
+}
+
+.nav_links li{
+	//display: inline-flex;
+	//justify-content: center;
+	display: flex;
+	padding:20px;
+	font-size: 25px;
+	
+}
+
+.nav_links li a {
+	text-decoration: none;
+	transition: 0.3s;
+	color: #FFFFFF 
+}
+
+
+.nav_links li a:hover {
+	transition: 0.3s;
+	//border-bottom: 3px solid #0088a9;
+	color: #0088a9;
+}
+
+nav li {
+   display: inline-block;
+   list-style-type: none;
+   position: relative;
+
+}
+
+nav li ul {
+   visibility: hidden;
+   display: flex;
+   position: absolute;
+   width: 100%;
+   left: 0;
+   top: 100%;
+   margin: 0;
+   padding: 0;
+
+}
+
+nav li:hover > ul {
+   display: block;
+   visibility: visible;
+   //-webkit-backdrop-filter: blur(16px);
+   backdrop-filter: blur(16px);
+   border: 4px solid #0088a9;
+   border-top:none;
+   //background-color: #5D5A5A;
+   //filter: blur(1px); 
+   //background: rgb(254,210,75);
+}
+
+.content .headers{
+	text-align: center;
+	font-family: 'Red Hat Text', sans serif; 
+	color: #FFFFFF;
+}
+.content .outdoor_climbing{
+	display: flex;
+	width: 100%;
+	padding: 0px 50px 50px 50px;
+	justify-content: center;
+	flex-flow: wrap;
+	
+}
+
+.content .indoor_climbing{
+	display: flex;
+	width: 100%;
+	padding: 0px 50px 50px 50px;
+	justify-content: center;
+	flex-flow: wrap;
+}
+
+
+.content .levels_of_climbing{
+	display: flex;
+	width: 100%;
+	padding: 0px 50px 50px 50px;
+	justify-content: center;
+	flex-flow: wrap;
+}
+.content .gallery{
+	display: flex;
+	width: 100%;
+	padding: 0px 50px 50px 50px;
+	justify-content: center;
+	flex-flow: wrap;
+}
+
+.content img{
+	max-width: 100%;
+	justify-content: center;
+}
+
+
+.content .outdoor_climbing .block1{
+	display: flex;
+	background-color: #3A3537;
+	border: 3px solid #000000;
+	flex-direction: column;
+	min-height: 400px;
+	justify-content: center;
+	align-items: center;
+	flex:1;
+}
+
+.content .outdoor_climbing .block_heading1{
+	color: #FED24B;
+	font-family: Red Hat Text;
+	text-align: center;
+}
+.content .outdoor_climbing .short_information1{
+	color: #808E99;
+	font-size: 25px;
+	font-family: Red Hat Text;
+	text-align: center;
+	padding: 0px 10px 10px 10px;
+
+}
+
+.content .outdoor_climbing .learn_more1{
+	text-decoration: none;
+	color: #808E99;
+	background-color: #FED24B;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000000;
+	font-size: 25px;
+	font-family: Red Hat Text;
+	text-align: center;
+	padding: 15px 20px;
+	margin: 20px;
+	opacity: 0.7;
+}
+
+.content .outdoor_climbing .learn_more1:hover{
+	transform: scale(1.1); //збільшення маштабу в 1.1 раз
+	transition: 0.5s;
+	opacity: 1;
+
+}
+
+
+.content .indoor_climbing .block2{
+	display: flex;
+	background-color: #3A3537;
+	border: 3px solid #000000;
+	flex-direction: column;
+	min-height: 400px;
+	justify-content: center;
+	align-items: center;
+	flex:1;
+}
+
+.content .indoor_climbing .block_heading2{
+	color: #03CAEA;
+	font-family: Red Hat Text;
+	text-align: center;
+}
+.content .indoor_climbing .short_information2{
+	color: #808E99;
+	font-size: 25px;
+	font-family: Red Hat Text;
+	text-align: center;
+	padding: 0px 10px 10px 10px;
+
+}
+
+.content .indoor_climbing .learn_more2{
+	text-decoration: none;
+	color: #3A3537;
+	background-color: #03CAEA;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000000;
+	font-size: 25px;
+	font-family: Red Hat Text;
+	text-align: center;
+	padding: 15px 20px;
+	margin: 20px;
+	opacity: 0.7;
+}
+
+.content .indoor_climbing .learn_more2:hover{
+	transform: scale(1.1);
+	transition: 0.5s ;
+	opacity: 1;
+
+}
+
+.content .levels_of_climbing .block3{
+	display: flex;
+	background-color: #3A3537;
+	border: 3px solid #000000;
+	flex-direction: column;
+	min-height: 400px;
+	justify-content: center;
+	align-items: center;
+	flex:1;
+}
+
+.content .levels_of_climbing .block_heading3{
+	color: #FED24B;
+	font-family: Red Hat Text;
+	text-align: center;
+}
+.content .levels_of_climbing .short_information3{
+	color: #808E99;
+	font-size: 25px;
+	font-family: Red Hat Text;
+	text-align: center;
+	padding: 0px 10px 10px 10px;
+
+}
+
+.content .levels_of_climbing .learn_more3{
+	text-decoration: none;
+	color: #808E99;
+	background-color: #FED24B;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000000;
+	font-size: 25px;
+	font-family: Red Hat Text;
+	text-align: center;
+	padding: 15px 20px;
+	margin: 20px;
+	opacity: 0.7;
+}
+
+.content .levels_of_climbing .learn_more3:hover{
+	transform: scale(1.1);
+	transition: 0.5s;
+	opacity: 1;
+
+}
+
+
+.content .gallery .block4{
+	display: flex;
+	background-color: #3A3537;
+	border: 3px solid #000000;
+	flex-direction: column;
+	min-height: 400px;
+	justify-content: center;
+	align-items: center;
+	flex:1;
+}
+
+.content .gallery .block_heading4{
+	color: #03CAEA;
+	font-family: Red Hat Text;
+	text-align: center;
+}
+.content .gallery .short_information4{
+	color: #808E99;
+	font-size: 25px;
+	font-family: Red Hat Text;
+	text-align: center;
+	padding: 0px 10px 10px 10px;
+
+}
+
+.content .gallery .learn_more4{
+	text-decoration: none;
+	color: #3A3537;
+	background-color: #03CAEA;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000000;
+	font-size: 25px;
+	font-family: Red Hat Text;
+	text-align: center;
+	padding: 15px 20px;
+	margin: 20px;
+	opacity: 0.7;
+}
+
+.content .gallery .learn_more4:hover{
+	transform: scale(1.1);
+	transition: 0.5s;
+	opacity: 1;
+
+}
+
+
+.footer{
+	display: inline-flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	font-family: Red Hat Text;
+	color: #FFFFFF;
+}
+
+.footer .footer_logo{
+	font-family: 'Kaushan Script', cursive; 
+	user-select: none;
+	padding-right: 20px;
+}
+
+.footer .explore{
+	text-decoration: none;
+	padding: 0px 20px;
+}
+
+.footer .explore .explore_link{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.footer .propositions{
+	padding: 0px 20px;
+}
+
+.footer .follow{
+	padding: 0px 40px;
+}
+.footer .follow .icon{
+	display: inline-flex;
+	justify-content: center;
+	padding: 5px 5px;
+}
+
+.footer .top-arrow{
+	display: inline-flex;
+	justify-content: flex-start;
+	padding: 20px 50px;
+
+
+}
+.footer .top-arrow .top-text{
+	display: flex;
+	text-decoration: none;
+	color: #FFFFFF;
+	justify-content: center;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
